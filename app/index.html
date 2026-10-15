@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Task Lab · Playwright Demo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f4f8;color:#162238;font:16px Arial,sans-serif}main{max-width:860px;margin:48px auto;padding:0 20px}.eyebrow{color:#536580;font-size:12px;letter-spacing:2px;font-weight:bold}header{margin-bottom:28px}h1{font-size:40px;margin:12px 0}header p{color:#536580;line-height:1.5}.card{background:white;border:1px solid #dbe2ed;border-radius:16px;padding:24px;margin-bottom:20px;box-shadow:0 6px 24px #14294508}form{display:grid;grid-template-columns:1fr 130px auto;gap:12px;align-items:end}label{display:block;font-size:13px;font-weight:bold;margin-bottom:8px}input,select,button{font:inherit;border-radius:8px;min-height:44px}input,select{width:100%;padding:10px;border:1px solid #b9c6d8}button{padding:10px 16px;cursor:pointer;border:1px solid #bccadd;background:white;color:#162238}button[type=submit]{background:#2459d3;border-color:#2459d3;color:white;font-weight:bold}button:disabled{opacity:.6}.toolbar{display:flex;gap:12px;align-items:center;justify-content:space-between}.toolbar select{width:auto}h2{font-size:20px;margin:0}.task{display:flex;align-items:center;gap:12px;padding:18px 0;border-top:1px solid #e3e9f0}.task:first-child{margin-top:20px}.task input{width:22px;min-height:22px;flex-shrink:0}.task label{margin:0;font-size:16px;overflow-wrap:anywhere;flex:1}.task.done label{text-decoration:line-through;color:#536580}.badge{background:#fff0cc;color:#6d4a00;padding:5px 8px;font-size:12px;border-radius:6px}.empty{color:#536580;padding:32px 0;text-align:center}#message{margin:14px 0 0;color:#a51e28}footer{color:#536580;font-size:13px;line-height:1.6}input:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #739eff;outline-offset:2px}@media(max-width:600px){main{margin:24px auto;padding:0 16px}h1{font-size:32px}.card{padding:18px}form{grid-template-columns:1fr}form button{width:100%}.task{flex-wrap:wrap}.toolbar{align-items:start}.task label{min-width:100px}}
+</style></head><body><main><header><div class="eyebrow">PLAYWRIGHT / SIX TESTING TOPICS</div><h1>Task Lab</h1><p>A small workspace. A complete testing playground.</p></header>
+<section class="card" aria-label="Create task"><form id="form" novalidate><div><label for="title">Task title</label><input id="title" placeholder="What needs to get done?" autocomplete="off"></div><div><label for="priority">Priority</label><select id="priority"><option value="normal">Normal</option><option value="high">High</option></select></div><button type="submit">Add task</button></form><p id="message" role="alert" hidden></p></section>
+<section class="card" aria-label="Task list"><div class="toolbar"><h2>My tasks <span id="count">(0)</span></h2><div><label for="filter">Show tasks</label><select id="filter"><option value="all">All tasks</option><option value="active">Active</option><option value="completed">Completed</option></select></div></div><div id="tasks"></div></section>
+<footer>Local demo · Session-isolated data · No account required</footer></main>
+<script type="module">
+const $ = id => document.getElementById(id);
+let tasks = [];
+async function api(path = '', options = {}) {
+ const r = await fetch('/api/tasks' + path, { ...options, headers: { 'Content-Type':'application/json' } });
+ const body = r.status === 204 ? null : await r.json(); if (!r.ok) throw new Error(body.error); return body;
+}
+function message(text = '') { $('message').textContent = text; $('message').hidden = !text; }
+function render() {
+ $('count').textContent = '(' + tasks.length + ')'; $('tasks').replaceChildren();
+ const visible = tasks.filter(t => $('filter').value === 'all' || t.completed === ($('filter').value === 'completed'));
+ if (!visible.length) { const el = document.createElement('p'); el.className = 'empty'; el.textContent = 'No tasks here yet.'; $('tasks').append(el); }
+ for (const task of visible) {
+  const row = document.createElement('div'); row.className = 'task' + (task.completed ? ' done' : ''); row.dataset.testid = 'task';
+  const check = document.createElement('input'); check.type = 'checkbox'; check.id = 'task-' + task.id; check.checked = task.completed;
+  const label = document.createElement('label'); label.htmlFor = check.id; label.textContent = task.title;
+  check.onchange = async () => { try { await api('/' + task.id, { method:'PATCH', body: JSON.stringify({completed:check.checked}) }); await refresh(); } catch(e) { message(e.message); } };
+  row.append(check, label);
+  if (task.priority === 'high') { const badge = document.createElement('span'); badge.className = 'badge'; badge.textContent = 'High'; row.append(badge); }
+  const del = document.createElement('button'); del.textContent = 'Delete'; del.setAttribute('aria-label', 'Delete ' + task.title);
+  del.onclick = async () => { try { await api('/' + task.id, {method:'DELETE'}); await refresh(); } catch(e) { message(e.message); } }; row.append(del); $('tasks').append(row);
+ }
+}
+async function refresh() { tasks = await api(); render(); }
+$('filter').onchange = render;
+$('form').onsubmit = async e => { e.preventDefault(); message(); const btn = e.submitter; if(btn) btn.disabled = true;
+ try { await api('', {method:'POST',body:JSON.stringify({title:$('title').value,priority:$('priority').value})}); $('title').value = ''; await refresh(); }
+ catch(e) { message(e.message); } finally { if(btn) btn.disabled = false; }
+};
+await refresh(); window.demoReady = true;
+</script></body></html>

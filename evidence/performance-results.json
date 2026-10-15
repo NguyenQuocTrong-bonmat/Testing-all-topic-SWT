@@ -1,0 +1,274 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/work/playwright-six-topics/node_modules/.bin/playwright",
+      "test",
+      "--project=performance",
+      "--output=performance-results"
+    ],
+    "configFile": "/workspace/work/playwright-six-topics/playwright.config.ts",
+    "rootDir": "/workspace/work/playwright-six-topics/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "e2e",
+        "name": "e2e",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "visual",
+        "name": "visual",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "visual.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ai-assisted",
+        "name": "ai-assisted",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "ai-assisted.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-android",
+        "name": "mobile-android",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-ios-profile",
+        "name": "mobile-ios-profile",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "performance",
+        "name": "performance",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "performance.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/performance-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "api.spec.ts"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "performance-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/performance-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node app/server.mjs",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "browser load and application-ready budget (5 samples)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance",
+              "projectName": "performance",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2101,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:56.155Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-metrics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzIjogWwogICAgewogICAgICAidHRmYk1zIjogMjQuMjAwMDAwMDAwMDExNjQsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiAxMzYuNzAwMDAwMDAwMDExNjQsCiAgICAgICJsb2FkTXMiOiAxMzkuNzAwMDAwMDAwMDExNjQsCiAgICAgICJyZWFkeU1zIjogNDIzLjIyODY5MTAwMDAwMDI1CiAgICB9LAogICAgewogICAgICAidHRmYk1zIjogMS43OTk5OTk5OTk5ODgzNTg1LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogOTksCiAgICAgICJsb2FkTXMiOiA5OS42OTk5OTk5OTk5NTM0MywKICAgICAgInJlYWR5TXMiOiAzMTMuNTI2OTA4OTk5OTk5NwogICAgfSwKICAgIHsKICAgICAgInR0ZmJNcyI6IDEuMDk5OTk5OTk5OTc2NzE3LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogMjcuNjk5OTk5OTk5OTUzNDM0LAogICAgICAibG9hZE1zIjogMzIuNzk5OTk5OTk5OTg4MzYsCiAgICAgICJyZWFkeU1zIjogMjA2LjYwMDU3OTk5OTk5OTgKICAgIH0sCiAgICB7CiAgICAgICJ0dGZiTXMiOiAyLjc5OTk5OTk5OTk4ODM1ODUsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiA2Ny43OTk5OTk5OTk5ODgzNiwKICAgICAgImxvYWRNcyI6IDY4LjU5OTk5OTk5OTk3NjcyLAogICAgICAicmVhZHlNcyI6IDE3Ny4zNDIxNjU5OTk5OTk5CiAgICB9LAogICAgewogICAgICAidHRmYk1zIjogMS40MDAwMDAwMDAwMjMyODMsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiAxMDUuNzk5OTk5OTk5OTg4MzYsCiAgICAgICJsb2FkTXMiOiAxMDYuNDAwMDAwMDAwMDIzMjgsCiAgICAgICJyZWFkeU1zIjogMjg5LjQ1ODU0Mjk5OTk5OTc0CiAgICB9CiAgXSwKICAicDk1UmVhZHlNcyI6IDQyMy4yMjg2OTEwMDAwMDAyNSwKICAicDk1TG9hZE1zIjogMTM5LjcwMDAwMDAwMDAxMTY0LAogICJidWRnZXRNcyI6IDIwMDAKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-bceca4fd605f09393d20",
+          "file": "performance.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "API response budget (20 sequential samples)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance",
+              "projectName": "performance",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 597,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:59.160Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-metrics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzTXMiOiBbCiAgICAzOTQuNTA3MTE5MDAwMDAwMzMsCiAgICA5LjYyNTg2Mzk5OTk5OTYzOCwKICAgIDUuMDUyNjM2OTk5OTk5Nzc3LAogICAgNS45NTYxNDg5OTk5OTk2NDEsCiAgICA0LjA4NjY0Mzk5OTk5OTk3OCwKICAgIDQuNzYxODgwOTk5OTk5NDQ4LAogICAgNi43OTA4NzEwMDAwMDAxNTIsCiAgICA2LjgzMzIyMzk5OTk5OTk3MywKICAgIDE3Ljg2MDczNzAwMDAwMDg4LAogICAgNi4xMzMyMjAwMDAwMDA2MiwKICAgIDMuNzA0MDM2MDAwMDAwMDg3NCwKICAgIDguNjQzNTQ2MDAwMDAwMjQyLAogICAgMTUuNjE2NzQ1MDAwMDAwMjY1LAogICAgNi42Nzk4NjgwMDAwMDAxNywKICAgIDQuOTMwOTAyOTk5OTk5NDg5LAogICAgMi42MzkyODMwMDAwMDA0MzI0LAogICAgMy4xMzM2MzUwMDAwMDAxNDAzLAogICAgMi44MzAxMzIwMDAwMDAwNDg3LAogICAgMi41MTY4MTE5OTk5OTk4NDUzLAogICAgMy4wNjA1ODAwMDAwMDAzCiAgXSwKICAicDk1TXMiOiAxNy44NjA3MzcwMDAwMDA4OCwKICAiYnVkZ2V0TXMiOiA1MDAsCiAgImNvbmN1cnJlbmN5IjogMQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-473d9738bea7e49a3f38",
+          "file": "performance.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T04:57:55.015Z",
+    "duration": 4910.592000000001,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

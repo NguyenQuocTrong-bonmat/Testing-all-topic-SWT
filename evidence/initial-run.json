@@ -1,0 +1,1250 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/work/playwright-six-topics/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/work/playwright-six-topics/playwright.config.ts",
+    "rootDir": "/workspace/work/playwright-six-topics/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "e2e",
+        "name": "e2e",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "visual",
+        "name": "visual",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "visual.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "ai-assisted",
+        "name": "ai-assisted",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "ai-assisted.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "mobile-android",
+        "name": "mobile-android",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "mobile-ios-profile",
+        "name": "mobile-ios-profile",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "performance",
+        "name": "performance",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "performance.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "api.spec.ts"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 2,
+    "webServer": {
+      "command": "node app/server.mjs",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "e2e.spec.ts",
+      "file": "e2e.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create, complete, filter, reload and delete a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2778,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:23.322Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b1c7859d981cc20c96be-505c5c29b7673748e0a3",
+          "file": "e2e.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "keyboard can submit a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2619,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:19.484Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b1c7859d981cc20c96be-0e5575bfbaeb9e6d208e",
+          "file": "e2e.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "server error is visible and retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5013,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:23.734Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b1c7859d981cc20c96be-c851395285f72b0f3887",
+          "file": "e2e.spec.ts",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:30.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-3f6645c760857006f48d",
+          "file": "visual.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "desktop populated state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:31.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-d26a22099b2b37cc2bfe",
+          "file": "visual.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "mobile empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3015,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:38.610Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-f6c649cd655ec62c5300",
+          "file": "visual.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "ai-assisted.spec.ts",
+      "file": "ai-assisted.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AI boundary: reject empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:42.949Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-9f6977d09bf8383b3a6b",
+          "file": "ai-assisted.spec.ts",
+          "line": 5,
+          "column": 2
+        },
+        {
+          "title": "AI boundary: reject whitespace",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30136,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 20000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 20000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 20000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/work/playwright-six-topics/tests/ai-assisted.spec.ts",
+                        "column": 63,
+                        "line": 7
+                      },
+                      "message": "Error: locator.click: Test timeout of 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Add task', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"submit\">Add task</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\n\n   5 |  test('AI boundary: reject ' + name, async ({page}) => {\n   6 |   await openApp(page); await page.getByLabel('Task title',{exact:true}).fill(value);\n>  7 |   await page.getByRole('button',{name:'Add task',exact:true}).click();\n     |                                                               ^\n   8 |   await expect(page.getByRole('alert')).toHaveText('Title must be 1–80 characters');\n   9 |   await expect(page.getByTestId('task')).toHaveCount(0);\n  10 |  });\n    at /workspace/work/playwright-six-topics/tests/ai-assisted.spec.ts:7:63"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:46.264Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/work/playwright-six-topics/test-results/ai-assisted-AI-boundary-reject-whitespace-ai-assisted/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/work/playwright-six-topics/test-results/ai-assisted-AI-boundary-reject-whitespace-ai-assisted/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6238f239107b88087546-9c978da29ea6a6f8abb8",
+          "file": "ai-assisted.spec.ts",
+          "line": 5,
+          "column": 2
+        },
+        {
+          "title": "AI boundary: reject over limit",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 29571,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 20000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 20000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 20000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/work/playwright-six-topics/tests/helpers.ts",
+                        "column": 35,
+                        "line": 3
+                      },
+                      "message": "Error: page.waitForFunction: Test timeout of 20000ms exceeded.\n\n   at helpers.ts:3\n\n  1 | import { expect, type Page } from '@playwright/test';\n  2 | export async function openApp(page: Page) {\n> 3 |  await page.goto('/'); await page.waitForFunction(() => (window as any).demoReady === true);\n    |                                   ^\n  4 | }\n  5 | export async function addTask(page: Page, title: string, priority = 'normal') {\n  6 |  await page.getByLabel('Task title', { exact: true }).fill(title);\n    at openApp (/workspace/work/playwright-six-topics/tests/helpers.ts:3:35)\n    at /workspace/work/playwright-six-topics/tests/ai-assisted.spec.ts:6:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:55:49.193Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/work/playwright-six-topics/test-results/ai-assisted-AI-boundary-reject-over-limit-ai-assisted/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/work/playwright-six-topics/test-results/ai-assisted-AI-boundary-reject-over-limit-ai-assisted/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6238f239107b88087546-258ef04565a81ca646d5",
+          "file": "ai-assisted.spec.ts",
+          "line": 5,
+          "column": 2
+        },
+        {
+          "title": "AI boundary: accept 1 characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:20.535Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-5e0da5592e31e3c83cff",
+          "file": "ai-assisted.spec.ts",
+          "line": 12,
+          "column": 30
+        },
+        {
+          "title": "AI boundary: accept 80 characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:20.543Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-3b606a97fa0c5f0f1d63",
+          "file": "ai-assisted.spec.ts",
+          "line": 12,
+          "column": 30
+        },
+        {
+          "title": "AI internationalization: trim whitespace and preserve Vietnamese",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1778,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:23.830Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-09a4d1c3dae0e1ac2db8",
+          "file": "ai-assisted.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "AI injection case: render HTML as literal text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1841,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:24.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-4c4a975c1fa2db6076aa",
+          "file": "ai-assisted.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "mobile.spec.ts",
+      "file": "mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "touch workflow creates and completes a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-android",
+              "projectName": "mobile-android",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:27.013Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-646a7bb714204cc3268e",
+          "file": "mobile.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "long content fits viewport and primary touch target is at least 44px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-android",
+              "projectName": "mobile-android",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2325,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:27.550Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-73ce1d4cf645600fbb24",
+          "file": "mobile.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "touch workflow creates and completes a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-ios-profile",
+              "projectName": "mobile-ios-profile",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2587,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:31.900Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-89e953d6c4fd13a4b272",
+          "file": "mobile.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "long content fits viewport and primary touch target is at least 44px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-ios-profile",
+              "projectName": "mobile-ios-profile",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:32.199Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-eace5a12a008adaf668e",
+          "file": "mobile.spec.ts",
+          "line": 10,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "browser load and application-ready budget (5 samples)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance",
+              "projectName": "performance",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:36.934Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-metrics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzIjogWwogICAgewogICAgICAidHRmYk1zIjogNS45MDAwMDAwMDAwMjMyODMsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiAxMjAsCiAgICAgICJsb2FkTXMiOiAxMjUuNzk5OTk5OTk5OTg4MzYsCiAgICAgICJyZWFkeU1zIjogMzUzLjc5NTU0MTk5OTk5OTg0CiAgICB9LAogICAgewogICAgICAidHRmYk1zIjogMC41OTk5OTk5OTk5NzY3MTY5LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogMzksCiAgICAgICJsb2FkTXMiOiA0NiwKICAgICAgInJlYWR5TXMiOiAxNzUuMzI3MzYwOTk5OTk5NjYKICAgIH0sCiAgICB7CiAgICAgICJ0dGZiTXMiOiA2LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogNDkuNzAwMDAwMDAwMDExNjQsCiAgICAgICJsb2FkTXMiOiA1MC4yOTk5OTk5OTk5ODgzNiwKICAgICAgInJlYWR5TXMiOiAxMjkuNzE2MzQ2MDAwMDAwMTYKICAgIH0sCiAgICB7CiAgICAgICJ0dGZiTXMiOiAwLjcwMDAwMDAwMDAxMTY0MTUsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiAzMS4yMDAwMDAwMDAwMTE2NCwKICAgICAgImxvYWRNcyI6IDMxLjgwMDAwMDAwMDA0NjU2NiwKICAgICAgInJlYWR5TXMiOiAxMjMuODE4MTQ2MDAwMDAwMDcKICAgIH0sCiAgICB7CiAgICAgICJ0dGZiTXMiOiAwLjcwMDAwMDAwMDAxMTY0MTUsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiAyMy40MDAwMDAwMDAwMjMyODMsCiAgICAgICJsb2FkTXMiOiAzMy40MDAwMDAwMDAwMjMyOCwKICAgICAgInJlYWR5TXMiOiA4Ny40NTg2NDkwMDAwMDAxNQogICAgfQogIF0sCiAgInA5NVJlYWR5TXMiOiAzNTMuNzk1NTQxOTk5OTk5ODQsCiAgInA5NUxvYWRNcyI6IDEyNS43OTk5OTk5OTk5ODgzNiwKICAiYnVkZ2V0TXMiOiAyMDAwCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-bceca4fd605f09393d20",
+          "file": "performance.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "API response budget (20 sequential samples)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance",
+              "projectName": "performance",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:39.629Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-metrics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzTXMiOiBbCiAgICAxNi45ODkyNjEwMDAwMDAxNywKICAgIDMuODA4ODg4MDAwMDAwMDI0NSwKICAgIDIuOTgzMzUxMDAwMDAwMzExNiwKICAgIDMuODEzNTM4OTk5OTk5NzY0LAogICAgMy44NDMxODIwMDAwMDAwNywKICAgIDIuODIxNTc4OTk5OTk5OTI5LAogICAgMy42MjgzNjkwMDAwMDAwMjA2LAogICAgMy44NzUzOTk5OTk5OTk4OTk2LAogICAgMy41Mjk3Mzc5OTk5OTk3MjQ3LAogICAgMi44NTMzNzM5OTk5OTk4MDMzLAogICAgMi42NjQ4NDE5OTk5OTk2ODA0LAogICAgNC43MjE4MzcwMDAwMDAwNTA1LAogICAgMy44NDU1MDkwMDAwMDAyMiwKICAgIDIuOTkyNTM1MDAwMDAwMzE2NCwKICAgIDIuNjE4MzI0MDAwMDAwMDI5NiwKICAgIDMuNjQ4Mzg3MDAwMDAwMTg0MywKICAgIDMuMTMyODIyOTk5OTk5OTE2NiwKICAgIDIuNjQxNzQ0MDAwMDAwMDE3LAogICAgMi43NTAwNDIwMDAwMDAxMjEzLAogICAgMi41NDk1NDcwMDAwMDAwNzUKICBdLAogICJwOTVNcyI6IDQuNzIxODM3MDAwMDAwMDUwNSwKICAiYnVkZ2V0TXMiOiA1MDAsCiAgImNvbmN1cnJlbmN5IjogMQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-473d9738bea7e49a3f38",
+          "file": "performance.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "api.spec.ts",
+      "file": "api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CRUD contract and session isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.185Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-fadac99d0794d7508034",
+          "file": "api.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "reject invalid body: empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 40,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.488Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-602033ffcc6c3dc27adf",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: too long",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.549Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-df72912b06a89c4e6645",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: wrong type",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 45,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.592Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-36a91469a1f4adef9ac7",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: invalid priority",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.655Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-5a0e41efd8ac0fb696e8",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: null",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 39,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.704Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-712ec02cd5ae799be7f1",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: array",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-9716f0248d34f39e98b6",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "malformed JSON and unsupported content type",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.806Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-3fb6d071432d78f11ff4",
+          "file": "api.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "PATCH rejects non-boolean completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:56:37.842Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-cb9008ed0f9bde569630",
+          "file": "api.spec.ts",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T04:55:17.305Z",
+    "duration": 82572.56700000001,
+    "expected": 26,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

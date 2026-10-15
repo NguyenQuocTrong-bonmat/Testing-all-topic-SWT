@@ -1,0 +1,285 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/work/playwright-six-topics/node_modules/.bin/playwright",
+      "test",
+      "--project=visual",
+      "--grep",
+      "desktop empty state",
+      "--output=mutation-results"
+    ],
+    "configFile": "/workspace/work/playwright-six-topics/playwright.config.ts",
+    "rootDir": "/workspace/work/playwright-six-topics/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "e2e",
+        "name": "e2e",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "visual",
+        "name": "visual",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "visual.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ai-assisted",
+        "name": "ai-assisted",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "ai-assisted.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-android",
+        "name": "mobile-android",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-ios-profile",
+        "name": "mobile-ios-profile",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "performance",
+        "name": "performance",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "performance.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/mutation-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "api.spec.ts"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "mutation-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/mutation-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node app/server.mjs",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop empty state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2268,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\n  1514 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: desktop-empty.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(desktop-empty.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - 1514 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 1514 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\n  1514 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: desktop-empty.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(desktop-empty.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - 1514 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 1514 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\n    at /workspace/work/playwright-six-topics/tests/visual.spec.ts:8:21",
+                    "location": {
+                      "file": "/workspace/work/playwright-six-topics/tests/visual.spec.ts",
+                      "column": 21,
+                      "line": 8
+                    },
+                    "snippet": "   6 | });\n   7 | test('desktop empty state', async ({ page }) => {\n>  8 |  await expect(page).toHaveScreenshot('desktop-empty.png', {fullPage:true, animations:'disabled'});\n     |                     ^\n   9 | });\n  10 | test('desktop populated state', async ({ page }) => {\n  11 |  await addTask(page, 'Review test report', 'high'); await addTask(page, 'Publish demo');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/work/playwright-six-topics/tests/visual.spec.ts",
+                        "column": 21,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveScreenshot\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\n  1514 pixels (ratio 0.01 of all image pixels) are different.\n\n  Snapshot: desktop-empty.png\n\nCall log:\n\u001b[2m  - Expect \"toHaveScreenshot(desktop-empty.png)\" with timeout 5000ms\u001b[22m\n\u001b[2m    - verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - 1514 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 1514 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\n\n   6 | });\n   7 | test('desktop empty state', async ({ page }) => {\n>  8 |  await expect(page).toHaveScreenshot('desktop-empty.png', {fullPage:true, animations:'disabled'});\n     |                     ^\n   9 | });\n  10 | test('desktop populated state', async ({ page }) => {\n  11 |  await addTask(page, 'Review test report', 'high'); await addTask(page, 'Publish demo');\n    at /workspace/work/playwright-six-topics/tests/visual.spec.ts:8:21"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:58:14.612Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "desktop-empty-expected.png",
+                      "contentType": "image/png",
+                      "path": "/workspace/work/playwright-six-topics/baselines/visual/desktop-empty.png"
+                    },
+                    {
+                      "name": "desktop-empty-actual.png",
+                      "contentType": "image/png",
+                      "path": "/workspace/work/playwright-six-topics/mutation-results/visual-desktop-empty-state-visual/desktop-empty-actual.png"
+                    },
+                    {
+                      "name": "desktop-empty-diff.png",
+                      "contentType": "image/png",
+                      "path": "/workspace/work/playwright-six-topics/mutation-results/visual-desktop-empty-state-visual/desktop-empty-diff.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/work/playwright-six-topics/mutation-results/visual-desktop-empty-state-visual/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/work/playwright-six-topics/mutation-results/visual-desktop-empty-state-visual/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/work/playwright-six-topics/mutation-results/visual-desktop-empty-state-visual/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/work/playwright-six-topics/tests/visual.spec.ts",
+                    "column": 21,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-3f6645c760857006f48d",
+          "file": "visual.spec.ts",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T04:58:13.156Z",
+    "duration": 5461.280000000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

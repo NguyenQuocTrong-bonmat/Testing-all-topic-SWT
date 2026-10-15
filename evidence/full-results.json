@@ -1,0 +1,1196 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/work/playwright-six-topics/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/work/playwright-six-topics/playwright.config.ts",
+    "rootDir": "/workspace/work/playwright-six-topics/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "e2e",
+        "name": "e2e",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "e2e.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "visual",
+        "name": "visual",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "visual.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ai-assisted",
+        "name": "ai-assisted",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "ai-assisted.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-android",
+        "name": "mobile-android",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-ios-profile",
+        "name": "mobile-ios-profile",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "mobile.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "performance",
+        "name": "performance",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "performance.spec.ts"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "/workspace/work/playwright-six-topics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "/workspace/work/playwright-six-topics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "api.spec.ts"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node app/server.mjs",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "e2e.spec.ts",
+      "file": "e2e.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create, complete, filter, reload and delete a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:07.838Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b1c7859d981cc20c96be-505c5c29b7673748e0a3",
+          "file": "e2e.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "keyboard can submit a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 821,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:10.099Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b1c7859d981cc20c96be-0e5575bfbaeb9e6d208e",
+          "file": "e2e.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "server error is visible and retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:10.953Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b1c7859d981cc20c96be-c851395285f72b0f3887",
+          "file": "e2e.spec.ts",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1049,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:12.698Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-3f6645c760857006f48d",
+          "file": "visual.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "desktop populated state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1508,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:14.710Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-d26a22099b2b37cc2bfe",
+          "file": "visual.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "mobile empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "visual",
+              "projectName": "visual",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 842,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:16.251Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-f6c649cd655ec62c5300",
+          "file": "visual.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "ai-assisted.spec.ts",
+      "file": "ai-assisted.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "AI boundary: reject empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1109,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:17.803Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-9f6977d09bf8383b3a6b",
+          "file": "ai-assisted.spec.ts",
+          "line": 5,
+          "column": 2
+        },
+        {
+          "title": "AI boundary: reject whitespace",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:19.850Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-9c978da29ea6a6f8abb8",
+          "file": "ai-assisted.spec.ts",
+          "line": 5,
+          "column": 2
+        },
+        {
+          "title": "AI boundary: reject over limit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:20.847Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-258ef04565a81ca646d5",
+          "file": "ai-assisted.spec.ts",
+          "line": 5,
+          "column": 2
+        },
+        {
+          "title": "AI boundary: accept 1 characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:21.748Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-5e0da5592e31e3c83cff",
+          "file": "ai-assisted.spec.ts",
+          "line": 12,
+          "column": 30
+        },
+        {
+          "title": "AI boundary: accept 80 characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1070,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:22.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-3b606a97fa0c5f0f1d63",
+          "file": "ai-assisted.spec.ts",
+          "line": 12,
+          "column": 30
+        },
+        {
+          "title": "AI internationalization: trim whitespace and preserve Vietnamese",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:23.835Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-09a4d1c3dae0e1ac2db8",
+          "file": "ai-assisted.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "AI injection case: render HTML as literal text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "ai-assisted",
+              "projectName": "ai-assisted",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1139,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:24.902Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6238f239107b88087546-4c4a975c1fa2db6076aa",
+          "file": "ai-assisted.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "mobile.spec.ts",
+      "file": "mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "touch workflow creates and completes a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-android",
+              "projectName": "mobile-android",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:26.744Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-646a7bb714204cc3268e",
+          "file": "mobile.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "long content fits viewport and primary touch target is at least 44px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-android",
+              "projectName": "mobile-android",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1082,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:28.864Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-73ce1d4cf645600fbb24",
+          "file": "mobile.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "touch workflow creates and completes a task",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-ios-profile",
+              "projectName": "mobile-ios-profile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1486,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:30.689Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-89e953d6c4fd13a4b272",
+          "file": "mobile.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "long content fits viewport and primary touch target is at least 44px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-ios-profile",
+              "projectName": "mobile-ios-profile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2092,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:33.188Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-eace5a12a008adaf668e",
+          "file": "mobile.spec.ts",
+          "line": 10,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "browser load and application-ready budget (5 samples)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance",
+              "projectName": "performance",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2827,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:36.587Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-metrics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzIjogWwogICAgewogICAgICAidHRmYk1zIjogMC43MDAwMDAwMDAwMTE2NDE1LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogMjUxLjI5OTk5OTk5OTk4ODM2LAogICAgICAibG9hZE1zIjogMjY0Ljc5OTk5OTk5OTk4ODM2LAogICAgICAicmVhZHlNcyI6IDkxNS4xNTcyODM5OTk5OTk5CiAgICB9LAogICAgewogICAgICAidHRmYk1zIjogNi43MDAwMDAwMDAwMTE2NDE1LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogNDMuMjAwMDAwMDAwMDExNjQsCiAgICAgICJsb2FkTXMiOiA0OCwKICAgICAgInJlYWR5TXMiOiAyNTIuMzY1NDUxMDAwMDAwNTgKICAgIH0sCiAgICB7CiAgICAgICJ0dGZiTXMiOiAyLjQwMDAwMDAwMDAyMzI4MywKICAgICAgImRvbUNvbnRlbnRMb2FkZWRNcyI6IDQyLjI5OTk5OTk5OTk4ODM2LAogICAgICAibG9hZE1zIjogNDUuMzk5OTk5OTk5OTY1MDc1LAogICAgICAicmVhZHlNcyI6IDIyNC40NDUwNTUwMDAwMDAxNAogICAgfSwKICAgIHsKICAgICAgInR0ZmJNcyI6IDEuNTk5OTk5OTk5OTc2NzE3LAogICAgICAiZG9tQ29udGVudExvYWRlZE1zIjogNTQuOTAwMDAwMDAwMDIzMjgsCiAgICAgICJsb2FkTXMiOiA1OS42MDAwMDAwMDAwMzQ5MjUsCiAgICAgICJyZWFkeU1zIjogMjYyLjk1MTU0NDk5OTk5OTkKICAgIH0sCiAgICB7CiAgICAgICJ0dGZiTXMiOiAwLjgwMDAwMDAwMDA0NjU2NjEsCiAgICAgICJkb21Db250ZW50TG9hZGVkTXMiOiAzNC43MDAwMDAwMDAwMTE2NCwKICAgICAgImxvYWRNcyI6IDM4LAogICAgICAicmVhZHlNcyI6IDE1NS40NTE5NzAwMDAwMDAwNwogICAgfQogIF0sCiAgInA5NVJlYWR5TXMiOiA5MTUuMTU3MjgzOTk5OTk5OSwKICAicDk1TG9hZE1zIjogMjY0Ljc5OTk5OTk5OTk4ODM2LAogICJidWRnZXRNcyI6IDIwMDAKfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-bceca4fd605f09393d20",
+          "file": "performance.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "API response budget (20 sequential samples)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance",
+              "projectName": "performance",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:41.982Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-metrics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzTXMiOiBbCiAgICA5LjA5OTMwNzAwMDAwMDQwOCwKICAgIDMuODc3NTgxMDAwMDAwNjQ2LAogICAgNC41NzI5MTc5OTk5OTk4NDUsCiAgICAzLjY2MDM5MTAwMDAwMDM0NTIsCiAgICA0LjU1NDM3NjAwMDAwMDA0NzUsCiAgICAzLjU3NjkxNTk5OTk5OTk4MywKICAgIDIuNTkwMjcwMDAwMDAwNjAwNywKICAgIDUuMDU1NTkyMDAwMDAwNjE1LAogICAgMy4zMzIxMzU5OTk5OTk5OTEzLAogICAgNC45MDMyOTgwMDAwMDAxNzcsCiAgICAxMS45NjAyODYwMDAwMDA0NTEsCiAgICA2Ljk4NTI3MDAwMDAwMDEyOCwKICAgIDMuODgwNTQ5OTk5OTk5ODU3NCwKICAgIDcuMDA0MzI2MDAwMDAwMjE5LAogICAgNC41MzA2MzUwMDAwMDAwNzUsCiAgICA1LjEzODA5MTAwMDAwMDcxMywKICAgIDYuNDEyNTc1MDAwMDAwMjg4LAogICAgMy42MTA0MTE5OTk5OTk5OTY2LAogICAgMTguNDc0NDA4MDAwMDAwMDQsCiAgICAzLjMwMDcwOTAwMDAwMDA5NwogIF0sCiAgInA5NU1zIjogMTEuOTYwMjg2MDAwMDAwNDUxLAogICJidWRnZXRNcyI6IDUwMCwKICAiY29uY3VycmVuY3kiOiAxCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-473d9738bea7e49a3f38",
+          "file": "performance.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "api.spec.ts",
+      "file": "api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CRUD contract and session isolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:42.910Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-fadac99d0794d7508034",
+          "file": "api.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "reject invalid body: empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 44,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.080Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-602033ffcc6c3dc27adf",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: too long",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.138Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-df72912b06a89c4e6645",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: wrong type",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.170Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-36a91469a1f4adef9ac7",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: invalid priority",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.218Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-5a0e41efd8ac0fb696e8",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: null",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 45,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-712ec02cd5ae799be7f1",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "reject invalid body: array",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.306Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-9716f0248d34f39e98b6",
+          "file": "api.spec.ts",
+          "line": 20,
+          "column": 2
+        },
+        {
+          "title": "malformed JSON and unsupported content type",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.338Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-3fb6d071432d78f11ff4",
+          "file": "api.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "PATCH rejects non-boolean completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T04:57:43.368Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-cb9008ed0f9bde569630",
+          "file": "api.spec.ts",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T04:57:07.037Z",
+    "duration": 36458.945,
+    "expected": 28,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
