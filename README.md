@@ -82,6 +82,8 @@ Performance là phép đo smoke cục bộ, không phải load/stress test và k
 
 ## Cấu trúc và bằng chứng
 
+Bản GitHub chứa mã nguồn, baseline và bằng chứng JSON. Các thư mục report HTML, trace ZIP và kết quả runtime nằm ở môi trường chạy ban đầu, không được commit; chạy `npm test` rồi `npm run report` để tạo và xem báo cáo mới trên máy bạn.
+
 - app/: HTTP server Node.js và giao diện HTML/CSS/JS, không có dependency runtime.
 - tests/: test TypeScript và helpers.
 - baselines/visual/: 3 ảnh chuẩn được lưu để so sánh.

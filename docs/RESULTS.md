@@ -2,6 +2,8 @@
 
 Ngày chạy: 15/10/2026 (Asia/Saigon). Node.js v24.19.0, Playwright 1.61.1, Linux, Chromium 151.0.7922.173 tại /usr/bin/chromium. Test được chạy trong thư mục work rồi sao chép nguyên mã sang /workspace/Testing-all-topic-SWT; đường dẫn trong bằng chứng JSON gốc phản ánh nơi chạy ban đầu.
 
+Lưu ý khi tải từ GitHub: các đường dẫn HTML report, trace ZIP và mutation-results bên dưới ghi lại artifact trong môi trường đã chạy, không phải tất cả đều được commit. Repository giữ mã nguồn, baseline và JSON kết quả. Chạy lại test để tái tạo HTML report/trace; phần mutation có lệnh tái tạo trong README.
+
 ## Kết quả chính
 
 **28/28 passed, 36,5 giây, 1 worker, retries=0.** Ảnh chuẩn đã có trước lần chạy so sánh này.
